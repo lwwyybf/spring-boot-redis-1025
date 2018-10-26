@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lww.springbootredis1025.mapper.UserMapper">
+
+    <select id="queryPassword" parameterType="string" resultType="string">
+        select password from user where username = #{username};
+    </select>
+
+    <select id="queryEmp" resultType="com.lww.springbootredis1025.model.Emp">
+        select * from emp;
+    </select>
+
+</mapper>
