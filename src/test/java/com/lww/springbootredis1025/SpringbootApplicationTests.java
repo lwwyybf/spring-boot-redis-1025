@@ -72,7 +72,7 @@ public class SpringbootApplicationTests {
         list.add(person2);
         list.add(person3);
         redisService.set("redis_list_test",list.toString());
-        System.out.println("插入成功");
+        System.out.println("插入成功");///
     }
 
     @Test
